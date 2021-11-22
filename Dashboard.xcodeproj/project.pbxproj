@@ -32,6 +32,34 @@
 			remoteGlobalIDString = B4DD6C22274BA01F00507786;
 			remoteInfo = Dashboard;
 		};
+		B4DD6C6F274BA54A00507786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4DD6C6B274BA54A00507786 /* ResourcesKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4DD6C5F274BA54A00507786;
+			remoteInfo = ResourcesKit;
+		};
+		B4DD6C8B274BA58E00507786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4DD6C87274BA58D00507786 /* CoreUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4DD6C7B274BA58D00507786;
+			remoteInfo = CoreUI;
+		};
+		B4DD6CA7274BA5B400507786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4DD6CA3274BA5B300507786 /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4DD6C97274BA5B300507786;
+			remoteInfo = Core;
+		};
+		B4DD6CC3274BA77D00507786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4DD6CBF274BA77D00507786 /* CoreNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4DD6CB3274BA77D00507786;
+			remoteInfo = CoreNetwork;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +77,10 @@
 		B4DD6C42274BA02100507786 /* DashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DD6C46274BA02100507786 /* DashboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardUITests.m; sourceTree = "<group>"; };
 		B4DD6C48274BA02100507786 /* DashboardUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardUITestsLaunchTests.m; sourceTree = "<group>"; };
+		B4DD6C6B274BA54A00507786 /* ResourcesKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResourcesKit.xcodeproj; path = ResourcesKit/ResourcesKit.xcodeproj; sourceTree = "<group>"; };
+		B4DD6C87274BA58D00507786 /* CoreUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreUI.xcodeproj; path = CoreUI/CoreUI.xcodeproj; sourceTree = "<group>"; };
+		B4DD6CA3274BA5B300507786 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
+		B4DD6CBF274BA77D00507786 /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = CoreNetwork/CoreNetwork.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +111,10 @@
 		B4DD6C1A274BA01F00507786 = {
 			isa = PBXGroup;
 			children = (
+				B4DD6CA3274BA5B300507786 /* Core.xcodeproj */,
+				B4DD6CBF274BA77D00507786 /* CoreNetwork.xcodeproj */,
+				B4DD6C87274BA58D00507786 /* CoreUI.xcodeproj */,
+				B4DD6C6B274BA54A00507786 /* ResourcesKit.xcodeproj */,
 				B4DD6C25274BA01F00507786 /* Dashboard */,
 				B4DD6C3B274BA02100507786 /* DashboardTests */,
 				B4DD6C45274BA02100507786 /* DashboardUITests */,
@@ -126,6 +162,38 @@
 				B4DD6C48274BA02100507786 /* DashboardUITestsLaunchTests.m */,
 			);
 			path = DashboardUITests;
+			sourceTree = "<group>";
+		};
+		B4DD6C6C274BA54A00507786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4DD6C70274BA54A00507786 /* ResourcesKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4DD6C88274BA58D00507786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4DD6C8C274BA58E00507786 /* CoreUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4DD6CA4274BA5B300507786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4DD6CA8274BA5B400507786 /* Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4DD6CC0274BA77D00507786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4DD6CC4274BA77D00507786 /* CoreNetwork.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +285,24 @@
 			mainGroup = B4DD6C1A274BA01F00507786;
 			productRefGroup = B4DD6C24274BA01F00507786 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B4DD6CA4274BA5B300507786 /* Products */;
+					ProjectRef = B4DD6CA3274BA5B300507786 /* Core.xcodeproj */;
+				},
+				{
+					ProductGroup = B4DD6CC0274BA77D00507786 /* Products */;
+					ProjectRef = B4DD6CBF274BA77D00507786 /* CoreNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = B4DD6C88274BA58D00507786 /* Products */;
+					ProjectRef = B4DD6C87274BA58D00507786 /* CoreUI.xcodeproj */;
+				},
+				{
+					ProductGroup = B4DD6C6C274BA54A00507786 /* Products */;
+					ProjectRef = B4DD6C6B274BA54A00507786 /* ResourcesKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B4DD6C22274BA01F00507786 /* Dashboard */,
@@ -225,6 +311,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B4DD6C70274BA54A00507786 /* ResourcesKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResourcesKit.framework;
+			remoteRef = B4DD6C6F274BA54A00507786 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4DD6C8C274BA58E00507786 /* CoreUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreUI.framework;
+			remoteRef = B4DD6C8B274BA58E00507786 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4DD6CA8274BA5B400507786 /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = B4DD6CA7274BA5B400507786 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B4DD6CC4274BA77D00507786 /* CoreNetwork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreNetwork.framework;
+			remoteRef = B4DD6CC3274BA77D00507786 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B4DD6C21274BA01F00507786 /* Resources */ = {
