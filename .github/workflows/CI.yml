@@ -1,16 +1,16 @@
 name: CI
 
-env:
-  BRANCHES: [master, develop]
-
 on:
   # Trigger the workflow on push or pull request
   push:
     branches:
-      - env.BRANCHES
+      - master
+      - develop
       - 'feature/*'
   pull_request:
-    branches: [env.BRANCHES]
+    branches:
+      - master
+      - develop
 
 jobs:
   SwiftLint:
