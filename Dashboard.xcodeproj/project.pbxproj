@@ -13,6 +13,7 @@
 		B4DD6C30274BA02000507786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DD6C2E274BA02000507786 /* Main.storyboard */; };
 		B4DD6C32274BA02100507786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD6C31274BA02100507786 /* main.m */; };
 		B4DD6C3D274BA02100507786 /* DashboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DD6C3C274BA02100507786 /* DashboardTests.m */; };
+		BCED723A278EB03B00CF82CD /* .SwiftLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED7239278EB03B00CF82CD /* .SwiftLint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		B4DD6C87274BA58D00507786 /* CoreUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreUI.xcodeproj; path = CoreUI/CoreUI.xcodeproj; sourceTree = "<group>"; };
 		B4DD6CA3274BA5B300507786 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		B4DD6CBF274BA77D00507786 /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = CoreNetwork/CoreNetwork.xcodeproj; sourceTree = "<group>"; };
+		BCED7239278EB03B00CF82CD /* .SwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .SwiftLint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				B4DD6C2E274BA02000507786 /* Main.storyboard */,
 				B4DD6C31274BA02100507786 /* main.m */,
 				B4DD6C33274BA02100507786 /* Dashboard.entitlements */,
+				BCED7239278EB03B00CF82CD /* .SwiftLint.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DD6C2B274BA01F00507786 /* ViewController.m in Sources */,
+				BCED723A278EB03B00CF82CD /* .SwiftLint.swift in Sources */,
 				B4DD6C32274BA02100507786 /* main.m in Sources */,
 				B4DD6C28274BA01F00507786 /* AppDelegate.m in Sources */,
 			);
@@ -536,11 +540,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Dashboard/Dashboard.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W36ZM9SUCG;
+				DEVELOPMENT_TEAM = N9LG8KMYS2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -566,11 +570,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Dashboard/Dashboard.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W36ZM9SUCG;
+				DEVELOPMENT_TEAM = N9LG8KMYS2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -591,6 +595,7 @@
 		B4DD6C50274BA02100507786 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -614,6 +619,7 @@
 		B4DD6C51274BA02100507786 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
