@@ -31,8 +31,8 @@ jobs:
       - name: Decrypt large secret
         run: ./provisioning/import_provisioning.sh
         env:
-          PROVISIONING_PASSWORD: ${{ secrets.provisioning_password }}
+          PROVISIONING_PASSWORD: ${{ secrets.PROVISIONING_PASSWORD }}
       - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode_13.1.0.app && /usr/bin/xcodebuild -version
+        run: sudo xcode-select -switch /Applications/Xcode_13.1.app && /usr/bin/xcodebuild -version
       - name: Run unit tests
         run: xcodebuild test -scheme Dashboard -project Dashboard.xcodeproj -destination 'platform=macOS,arch=x86_64' | xcpretty && exit ${PIPESTATUS[0]}
